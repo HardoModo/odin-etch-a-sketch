@@ -14,7 +14,7 @@ for(i = 0; i < grid; i++) {
 function addColumnDiv() {
     for(x = 0; x < grid; x++) {
         var columnDiv = document.createElement("div")
-        columnDiv.setAttribute("class", "columnDiv")
+        columnDiv.setAttribute("id", "columnDiv")
         rowDiv.appendChild(columnDiv)
     }
 }
@@ -23,6 +23,6 @@ function fun() {
     console.log("It worked!")
 }
 
-var allColumnDiv = test.querySelectorAll("div")
+/*var allColumnDiv = test.querySelectorAll("div")
 
-container.addEventListener("click", fun)
+container.addEventListener("click", fun)*/
