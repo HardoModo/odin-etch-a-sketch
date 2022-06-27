@@ -1,18 +1,28 @@
+var grid = 16
+
 const container = document.getElementById("container")
 
-for(i = 0; i < 16; i++) {
+for(i = 0; i < grid; i++) {
     var rowDiv = document.createElement("div")
     rowDiv.setAttribute("id", "rowDiv")
 
-    test()
+    addColumnDiv()
 
     container.appendChild(rowDiv)
 }
 
-function test() {
-    for(x = 0; x < 16; x++) {
+function addColumnDiv() {
+    for(x = 0; x < grid; x++) {
         var columnDiv = document.createElement("div")
-        columnDiv.setAttribute("id", "columnDiv")
+        columnDiv.setAttribute("class", "columnDiv")
         rowDiv.appendChild(columnDiv)
     }
 }
+
+function fun() {
+    console.log("It worked!")
+}
+
+var allColumnDiv = test.querySelectorAll("div")
+
+container.addEventListener("click", fun)
