@@ -21,8 +21,9 @@ function addColumnDiv() {
 
 function fun() {
     console.log("It worked!")
+    columnDiv.setAttribute("id","test")
 }
 
-/*var allColumnDiv = test.querySelectorAll("div")
+var allColumnDiv = document.querySelector("#columnDiv")
 
-container.addEventListener("click", fun)*/
+allColumnDiv.addEventListener("click", fun)
