@@ -9,6 +9,8 @@
     justify-content: center;
 }
 
+
+
 #container {
     display: flex;
     flex-direction: column;
@@ -27,9 +29,9 @@
 #columnDiv {
     display: flex;
     flex-grow: 1;
-    background-color: hotpink;
+    /*background-color: hotpink;*/
 }
 
-#test {
-    background-color: turquoise;
+.test {
+    background-color: white;
 }

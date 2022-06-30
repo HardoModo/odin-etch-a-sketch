@@ -15,15 +15,22 @@ function addColumnDiv() {
     for(x = 0; x < grid; x++) {
         var columnDiv = document.createElement("div")
         columnDiv.setAttribute("id", "columnDiv")
+
         rowDiv.appendChild(columnDiv)
     }
 }
 
 function fun() {
     console.log("It worked!")
-    columnDiv.setAttribute("id","test")
 }
 
-var allColumnDiv = document.querySelector("#columnDiv")
+var allColumnDiv = document.querySelectorAll("#columnDiv")
 
-allColumnDiv.addEventListener("click", fun)
+allColumnDiv.forEach((grid) => {
+    grid.addEventListener('click', () => {
+        grid.setAttribute("class","test")
+    })
+
+}
+
+)
