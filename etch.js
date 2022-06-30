@@ -27,8 +27,9 @@ function fun() {
 var allColumnDiv = document.querySelectorAll("#columnDiv")
 
 allColumnDiv.forEach((grid) => {
-    grid.addEventListener('click', () => {
+    grid.addEventListener('mouseleave', () => {
         grid.setAttribute("class","test")
+        console.log("It worked!")
     })
 
 }
